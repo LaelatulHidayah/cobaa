@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:id="@+id/recyclerView"
+        android:layout_below="@+id/scrol"
+        tools:listitem="@layout/list_item"/>
+
+    <ScrollView
+        android:id="@+id/scrol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/gbr1"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:src="@drawable/atas">
+
+            </ImageView>
+            <ImageView
+                android:layout_width="175dp"
+                android:layout_height="114dp"
+                android:src="@drawable/logomq"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="220dp">
+
+            </ImageView>
+            <ImageView
+                android:layout_width="800dp"
+                android:layout_height="120dp"
+                android:src="@drawable/play1"
+                android:layout_below="@+id/gbr1"
+                android:layout_marginTop="60dp">
+
+            </ImageView>
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:src="@drawable/makhroj"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/gbr1"
+                android:layout_marginTop="40dp">
+
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Belajar Tajwid"
+                android:textColor="#ffffff"
+                android:textSize="11pt"
+                android:textStyle="bold"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="40dp">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="METODE NGALAH"
+                android:textColor="#ffffff"
+                android:textSize="11pt"
+                android:textStyle="bold"
+                android:layout_marginTop="110dp"
+                android:layout_marginLeft="20dp">
+
+            </TextView>
+            <Button
+                android:id="@+id/profil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="profil"
+                android:layout_below="@id/gbr1"
+                android:layout_marginLeft="70dp">
+
+            </Button>
+            <Button
+                android:id="@+id/sanad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sanad"
+                android:layout_below="@id/gbr1"
+                android:layout_marginLeft="250dp">
+
+            </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="play"
+                android:onClick="play"
+                android:layout_below="@id/gbr1"
+                android:layout_marginTop="95dp"
+                android:layout_marginLeft="30dp">
+
+            </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pause"
+                android:onClick="pause"
+                android:layout_below="@id/gbr1"
+                android:layout_marginTop="95dp"
+                android:layout_centerHorizontal="true">
+
+            </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="stop"
+                android:onClick="stop"
+                android:layout_below="@id/gbr1"
+                android:layout_marginTop="95dp"
+                android:layout_marginLeft="290dp">
+
+            </Button>
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
